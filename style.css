@@ -2,7 +2,7 @@
 
 body {
     
-    animation: animate 9s infinite alternate;
+    /* animation: animate 9s infinite alternate; */
 }
 @keyframes animate {
     0%{background: gold;}
@@ -210,6 +210,24 @@ hr{
 
 /* Media Quaries for the website */
 
+@media (min-width: 951px) and (max-width: 1400px) {
+    .nav-btn{
+        display: none;
+    }
+    .top-section .navMenu{
+        display: none;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 950px) {
+    .nav-btn{
+        display: none;
+    }
+    .top-section .navMenu{
+        display: none;
+    }
+}
+
 @media (min-width: 500px) and (max-width:750px ) {
     .main-nav .myNav {
         display: none;
@@ -253,20 +271,50 @@ hr{
     }
 }
 
-@media (min-width: 751px) and (max-width: 950px) {
-    .nav-btn{
+@media (max-width:500px) {
+    .main-nav .myNav {
         display: none;
     }
-    .top-section .navMenu{
-        display: none;
+    .top-section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
-}
-
-@media (min-width: 951px) and (max-width: 1400px) {
-    .nav-btn{
-        display: none;
+    .top-section .content{
+        transform: scale(0.7);
+        padding: 0;
     }
-    .top-section .navMenu{
-        display: none;
+    .top-section .top-img {
+        width: 50%;
     }
+    .content .cta {
+        margin-left: 0;
+    }
+    .middle-section h1 {
+        transform: scale(0.75);
+    }
+    .middle-gallery h1 {
+        transform: scale(0.75);
+    }
+    .middle-section .content-middle {
+        display: grid;
+    }
+    .middle-section .content-inner{
+        margin: 0;
+        text-align: center;
+    }
+    .middle-gallery .gallery {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .footer-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-section p {
+        text-align: center;
+        font-size: 13px;
+    }
+    
 }
