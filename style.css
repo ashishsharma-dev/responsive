@@ -2,7 +2,7 @@
 
 body {
     
-    /* animation: animate 9s infinite alternate; */
+    animation: animate 9s infinite alternate;
 }
 @keyframes animate {
     0%{background: gold;}
